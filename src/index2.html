@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recepies</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg">
+<section>
+    <div class="container initial">
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn btn" onclick="myFunction()">Meal Type
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <ul>
+                        <li class="filter-btn" data-dish-type="breakfast"><a href="#">Breakfast</a></li>
+                        <li class="filter-btn" data-dish-type="starter"><a href="#">Starter</a></li>
+                        <li class="filter-btn" data-dish-type="main course"><a href="#">Main course</a></li>
+                        <li class="filter-btn" data-dish-type="desserts"><a href="#">Desserts</a></li>
+                        <li class="filter-btn" data-dish-type="salad"><a href="#">Salad</a></li>
+                        <li class="filter-btn" data-dish-type="snack"><a href="#">Snack</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Site zacuvani recepti -->
+            <button class="btn favouriteTab">Favourite</button>
+            <button class="btn chatBotTab">Chatbot</button>
+        </div>
+
+        <div class="quick_search">
+        <h1 class="brand">My recipe</h1>
+        <form class="search_recipe">
+            <input class="recipe" type="text" placeholder="Search Your Recipe...">
+            <ion-icon name="search"></ion-icon>
+        </form>
+        </div>
+        <div class="search-result">
+
+        </div>
+        <button id="load-more-btn" style="display: none;">Load More</button>
+
+        <div class="more-info">
+            <button class="close">X</button>
+            <div class="details">
+
+            </div>
+
+
+        </div>
+
+        <div class="favourites">
+
+        </div>
+
+        <div class="chatBot">
+            <div class="firstPart">
+                <h1 class="brand">Let's chat</h1>
+                <h3 class="chat">Ask me anything about food</h3>
+                <form class="chat_form">
+                    <input type="text" class="question">
+                    <ion-icon name="search"></ion-icon>
+                </form>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn btn" onclick="myFunction2()">What can I ask
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="help">
+                    <ul>
+                        <li>Ask for recipes like 'chicken recipes' or 'spaghetti with shrimp'</li>
+                        <li>Ask for nutrient contents like 'vitamin a in 2 carrots' or 'calories is 1 cup of butter'</li>
+                        <li>Convert something with '2 cups of butter in grams'</li>
+                        <li>Check out foodie gifts by saying 'show me some foodie gifts'</li>
+                        <li>Find food substitutes by saying 'what is a substitute for flour'</li>
+                        <li>Thirsty? Ask for wine pairings like 'which wine goes well with spaghetti carbonara'</li>
+                        <li>If you want more results, just say 'more'</li>
+                        <li>For more similar results say 'more like the first/second/third...'</li>
+                        <li>Want to learn some food trivia, just say 'food trivia'.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chatResult">
+                <h1 class="header"></h1>
+                <div class="chatMedia"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="app2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
